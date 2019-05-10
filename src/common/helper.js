@@ -88,7 +88,7 @@ function cacheEvent (event) {
     originator: config.KAFKA_ORIGINATOR,
     timestamp: new Date().toISOString(),
     'mime-type': 'application/json',
-    payload: event,
+    payload: event
   }
   return busApiClient.postEvent(reqBody)
 }

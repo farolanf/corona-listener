@@ -36,5 +36,5 @@ module.exports = {
   GET_USER_DETAILS_URL: process.env.GET_USER_DETAILS_URL ||
     'https://api.topcoder-dev.com/v3/users?filter=id={memberId}',
   GET_USER_DETAILS_BY_HANDLE_URL: process.env.GET_USER_DETAILS_BY_HANDLE_URL ||
-    'https://api.topcoder-dev.com/v3/members/{handle}',
+    'https://api.topcoder-dev.com/v3/members/{handle}'
 }
