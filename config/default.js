@@ -19,6 +19,11 @@ module.exports = {
     'submission.notification.delete',
     'notifications.autopilot.events'
   ],
+  KAFKA_CACHE_TOPIC: process.env.KAFKA_CACHE_TOPIC || 'corona.saturate.create',
+  KAFKA_ORIGINATOR: process.env.KAFKA_ORIGINATOR || 'corona.listener',
+  KAFKA_ERROR_TOPIC: process.env.KAFKA_ERROR_TOPIC || 'corona.listener.errors',
+
+  BUSAPI_URL: process.env.BUSAPI_URL,
 
   AUTH0_URL: process.env.AUTH0_URL,
   AUTH0_AUDIENCE: process.env.AUTH0_AUDIENCE || 'https://www.topcoder.com',
@@ -32,8 +37,4 @@ module.exports = {
     'https://api.topcoder-dev.com/v3/users?filter=id={memberId}',
   GET_USER_DETAILS_BY_HANDLE_URL: process.env.GET_USER_DETAILS_BY_HANDLE_URL ||
     'https://api.topcoder-dev.com/v3/members/{handle}',
-
-  REDIS_CONNECTION: process.env.REDIS_CONNECTION,
-  REDIS_EVENT_LIST_KEY: process.env.REDIS_EVENT_LIST_KEY || 'events',
-  MAX_CACHED_EVENTS: process.env.MAX_CACHED_EVENTS || 10
 }

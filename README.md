@@ -30,9 +30,6 @@ The following parameters can be set in config files or in env variables:
 - GET_CHALLENGE_DETAILS_URL: URL to get challenge details
 - GET_USER_DETAILS_URL: URL to get user details
 - GET_USER_DETAILS_BY_HANDLE_URL: URL to get user details by handle
-- REDIS_CONNECTION: Redis connection
-- REDIS_EVENT_LIST_KEY: Redis event list key
-- MAX_CACHED_EVENTS: max count of events to cache
 
 
 Test config is at `test/testConfig.js`, you don't need to change it.
