@@ -22,6 +22,9 @@ The following parameters can be set in config files or in env variables:
     if not provided, then SSL connection is not used, direct insecure connection is used;
     if provided, it can be either path to private key file or private key content
 - TOPICS: Kafka topics to listen to
+- KAFKA_CACHE_TOPIC: Kafka topic to post event to,
+- KAFKA_ORIGINATOR: Originator for the posted event,
+- KAFKA_ERROR_TOPIC: Kafka topic for errors,
 - AUTH0_URL: Auth0 URL, used to get TC M2M token
 - AUTH0_AUDIENCE: Auth0 audience, used to get TC M2M token
 - TOKEN_CACHE_TIME: token cache time, used to get TC M2M token
